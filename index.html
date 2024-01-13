@@ -152,17 +152,23 @@
     </table>
     <br>
     <h3>Formulario</h3>
-    <!--ACTION: define el tipo de accion que se va a llevar a cabo
-    ya sea manda un mail o procesar su contenido con un script.
-        METHOD: indica si la petición http sera get o post-->
+    <!--ACTION: especifica la url a la que se enviaran los datos del formulario
+        METHOD: indica como se enviaran los datos.
+                en este caso se utiliza "post" que envia los datos
+                de manera mas segura que "get".
+        REQUIRED: indica que son campos obligatorios-->
     <form action="/procesar-formulario" method="post">
         <!--Campos de formulario-->
         <label for="nombre">nombre</label>
         <input type="text" id="nombre" name="nombre" required>
         <br>
         <label for="correo">correo electronico</label>
-        
-
+        <input type="text" id="correo" name="correo" required>
+        <br>
+        <label for="contrasena">Contraseña</label>
+        <input type="password" name="contrasena" id="contrasena" required>
+        <br>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 
