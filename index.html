@@ -82,11 +82,15 @@
     <br>
     <img src="img/freddie-dredd.gif" alt="freddie dredd" width="200" height="300">
     <br>
-    <iframe width="726" height="480" src="https://www.youtube.com/embed/fYk0K7yE0V0" title="psychoangel - wrld_peace"
+    <!--IFRAME VIDEO DE YOUTUBE-->
+    <iframe
+        width="726" height="480"
+        src="https://www.youtube.com/embed/fYk0K7yE0V0" title="psychoangel - wrld_peace"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-    <h3>Enlacs a direcciones de correo y archivos</h3>
+    
+        <h3>Enlacs a direcciones de correo y archivos</h3>
 
     <a href="alguien123@gmail.com?subject=Contacto">Enviar correo</a><!--mensaje a correo electronico con asunto-->
     <br>
@@ -110,7 +114,7 @@
     <br>
     <h3>Tablas | Estructuras basicas
     </h3>
-    <table>
+    <table border="1">
         <!--
             TR: filas
             TH: encabezado
@@ -131,7 +135,7 @@
     </table>
     <br>
     <h3>Tablas | Colspan & Rowspan</h3>
-    <table>
+    <table border="1">
         <tr>
             <td>Item</td>
             <td colspan="2">columna "doble"</td>
@@ -146,6 +150,20 @@
             <td>item</td>
         </tr>
     </table>
+    <br>
+    <h3>Formulario</h3>
+    <!--ACTION: define el tipo de accion que se va a llevar a cabo
+    ya sea manda un mail o procesar su contenido con un script.
+        METHOD: indica si la petición http sera get o post-->
+    <form action="/procesar-formulario" method="post">
+        <!--Campos de formulario-->
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="correo">correo electronico</label>
+        
+
+    </form>
 </body>
 
 </html>
